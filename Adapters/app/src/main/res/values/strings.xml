@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Adapters</string>
+    <string name="r">Значение</string>
+    <string-array name="forbes">
+        <item>Bill Gates</item>
+        <item>Warren Buffett</item>
+        <item>Jeff Bezos</item>
+        <item>Amancio Ortega</item>
+        <item>Mark Zuckerberg</item>
+        <item>Carlos Slim Helu</item>
+        <item>Larry Ellison</item>
+        <item>Charles Koch</item>
+        <item>David Koch</item>
+        <item>Michael Bloomberg</item>
+        <item>Bernard Arnault</item>
+        <item>Larry Page</item>
+        <item>Sergey Brin</item>
+        <item>Liliane Bettencourt</item>
+        <item>S. Robson Walton</item>
+        <item>Jim Walton</item>
+        <item>Alice Walton</item>
+        <item>Wang Jianlin</item>
+        <item>Li Ka-shing</item>
+        <item>Sheldon Adelson</item>
+        <item>Steve Ballmer</item>
+        <item>Jorge Paulo Lemann</item>
+        <item>Jack Ma</item>
+        <item>Beate Heister &amp; Karl Albrecht Jr.</item>
+        <item>David Thomson</item>
+        <item>Jacqueline Mars</item>
+        <item>John Mars</item>
+        <item>Phil Knight</item>
+        <item>Maria Franca Fissolo</item>
+        <item>George Soros</item>
+        <item>Ma Huateng</item>
+        <item>Lee Shau Kee</item>
+        <item>Mukesh Ambani</item>
+        <item>Masayoshi Son</item>
+        <item>Kjeld Kirk Kristiansen</item>
+        <item>Georg Schaeffler</item>
+        <item>Joseph Safra</item>
+        <item>Michael Dell</item>
+        <item>Susanne Klatten</item>
+        <item>Len Blavatnik</item>
+        <item>Laurene Powell Jobs</item>
+        <item>Paul Allen</item>
+        <item>Stefan Persson</item>
+        <item>Theo Albrecht, Jr.</item>
+        <item>Prince Alwaleed Bin Talal Alsaud</item>
+        <item>Leonid Mikhelson</item>
+        <item>Charles Ergen</item>
+        <item>Stefan Quandt</item>
+        <item>James Simons</item>
+        <item>Leonardo Del Vecchio</item>
+        <item>Alexey Mordashov</item>
+        <item>William Ding</item>
+        <item>Dieter Schwarz</item>
+        <item>Ray Dalio</item>
+        <item>Carl Icahn</item>
+        <item>Lakshmi Mittal</item>
+        <item>Serge Dassault</item>
+        <item>Vladimir Lisin</item>
+        <item>Gennady Timchenko</item>
+        <item>Wang Wei</item>
+        <item>Tadashi Yanai</item>
+        <item>Charoen Sirivadhanabhakdi</item>
+        <item>Francois Pinault</item>
+        <item>Hinduja family</item>
+        <item>David &amp; Simon Reuben</item>
+        <item>Donald Bren</item>
+        <item>Alisher Usmanov</item>
+        <item>Lee Kun-Hee</item>
+        <item>Thomas &amp; Raymond Kwok</item>
+        <item>Joseph Lau</item>
+        <item>Gina Rinehart</item>
+        <item>Azim Premji</item>
+        <item>Marcel Herrmann Telles</item>
+        <item>Vagit Alekperov</item>
+        <item>Mikhail Fridman</item>
+        <item>Abigail Johnson</item>
+        <item>Pallonji Mistry</item>
+        <item>Vladimir Potanin</item>
+        <item>Wang Wenyin</item>
+        <item>Elon Musk</item>
+        <item>Stefano Pessina</item>
+        <item>German Larrea Mota Velasco</item>
+        <item>Thomas Peterffy</item>
+        <item>Iris Fontbona</item>
+        <item>Dilip Shanghvi</item>
+        <item>Dietrich Mateschitz</item>
+        <item>Harold Hamm</item>
+        <item>Robin Li</item>
+        <item>Andrey Melnichenko</item>
+        <item>Rupert Murdoch</item>
+        <item>Heinz Hermann Thiele</item>
+        <item>Steve Cohen</item>
+        <item>Patrick Drahi</item>
+        <item>Henry Sy</item>
+        <item>Charlene de Carvalho-Heineken</item>
+        <item>Philip Anschutz</item>
+        <item>Ronald Perelman</item>
+        <item>Hans Rausing</item>
+        <item>Carlos Alberto Sicupira</item>
+        <item>Klaus-Michael Kuehne</item>
+
+    </string-array>
+</resources>

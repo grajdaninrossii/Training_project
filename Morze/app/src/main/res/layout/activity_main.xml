@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C048E4D"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/above_freq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#A4F8D4"
+        android:contentDescription="@string/app_name"
+        android:onClick="changeFrequency"
+        android:src="@drawable/arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/frequency"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <ImageButton
+        android:id="@+id/reduce_freq"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#A4F8D4"
+        android:contentDescription="@string/app_name"
+        android:onClick="changeFrequency"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frequency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="none"
+        android:text="46000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <EditText
+        android:id="@+id/callSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="name"
+        android:backgroundTint="#1E3A2C"
+        android:ems="10"
+        android:maxLines="1"
+        android:hint="Ваш позывной"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        android:maxLength="15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherParties"
+        app:layout_constraintVertical_bias="0.026"
+        />
+
+
+
+    <Button
+        android:id="@+id/saveCallSign"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#009688"
+        android:onClick="saveCallSign"
+        android:text="Сохранить позывной"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callSign"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+
+    <Spinner
+        android:id="@+id/otherParties"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frequency"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <RadioGroup
+        android:id="@+id/operationMode"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signs"
+        app:layout_constraintVertical_bias="0.07999998">
+
+        <RadioButton
+            android:id="@+id/receive"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="125dp"
+            android:layout_height="59dp"
+            android:buttonTint="#016533"
+            android:checked="true"
+            android:text="Прием" />
+
+        <RadioButton
+            android:id="@+id/broadcast"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:buttonTint="#016533"
+            android:checked="false"
+            android:text="Передача" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FB3737"
+        android:contentDescription="@string/app_name"
+        android:text="Сигнал"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operationMode"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <Button
+        android:id="@+id/keys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009688"
+        android:text="+"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signal"
+        app:layout_constraintVertical_bias="0.081"
+        android:onClick="enterKey"/>
+
+    <EditText
+        android:id="@+id/signs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="name"
+        android:backgroundTint="#1E3A2C"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:allowClickWhenDisabled="false"
+        android:minHeight="28dp"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveCallSign"
+        app:layout_constraintVertical_bias="0.03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Yandex Predictor</string>
+    <string name="predictor">Предиктор: </string>
+    <string name="ccopy">Реализовано с помощью сервера \"Яндекс.Предиктор\"</string>
+</resources>
